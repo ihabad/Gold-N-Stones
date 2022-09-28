@@ -1,0 +1,63 @@
+﻿@model GoldAndSilver.Models.CollectionViewModel
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<br />
+<h2 class="text-info">Delete Collection</h2>
+<br/>
+
+<form method="post">
+    <img src="~/images/trash-ping.png" class="rounded float-right" style="width:60px; height:60px;" />
+    <div class="border backgroundyellow">
+        <div class="col-8">
+            <input type="hidden" asp-for="Collection.Id" />
+            <fieldset disabled>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Collection.Name" class="custom-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Collection.Name" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Collection.Description" class="custom-label"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.TextAreaFor(m => m.Collection.Description)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Collection.Price" class="custom-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Collection.Price" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Collection.CategoryId" class="custom-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Collection.Category.Name" class="form-control" />
+                    </div>
+                </div>    
+            </fieldset>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <img src="@Model.Collection.Image" width="100%" style="border-radius:6px;border:1px solid #bbb9b9;" />
+        </div>
+        <div class="col-8">
+            <div class="col-8 offset-4">
+                <partial name="_DeleteAndBackToListButton" model="Model.Collection.Id" />
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Collection>
+
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@if (Model.Count() > 0)
+{
+
+<div class="col-12  post @Model.FirstOrDefault().Category.Name.Replace(" ",string.Empty) Our-Collection">
+    <div class="row">
+        <h3 class="text display-4" style="color:#AD974F">@Model.FirstOrDefault().Category.Name </h3>
+    </div>
+<div class="row pb-3">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="row p-2">
+                <div class="col-12 p-1" style="border:1px solid #008cba; border-radius: 6px;">
+                            <div class="card" style="background-color: black;">
+                      <img src="@item.Image" class="card-img-top rounded" />
+
+                        <div class="card-body">
+                            <div class="pl-1">
+                                <p class="card-title h5 text-primary"> @item.Name </p>
+                      
+                            </div>
+
+                            <div class="pl-1 text-danger">
+                              <p>$@item.Price </p>
+                              
+                            </div>
+                            <div class="pl-1 text-white">
+                                 <p>
+                                @Html.Raw(item.Description)
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                      <a asp-action="Details" class="btn btn-primary form-control" asp-route-id="@item.Id">
+                            Add To Cart
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+        <div class="p-4"></div>
+</div>
+}

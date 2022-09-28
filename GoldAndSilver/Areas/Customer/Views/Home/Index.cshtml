@@ -1,0 +1,41 @@
+﻿@model GoldAndSilver.Models.IndexViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+<div class="backgroundWhite container">
+  
+
+    <ul id="menu-filters"class="menu-filter-list list-inline text-center">
+            <li class="active btn btn-secondary ml-1 mr-1".data-filter=" Our-Collection">View All</li>
+
+            @foreach (var item in Model.Category)
+            {
+                <li class="ml-1 mr-1" data-filter=".@item.Name.Replace(" ",string.Empty)">@item.Name</li>
+            
+            }
+ 
+     </ul>
+ 
+
+     <div class="video-background-homepage" style="overflow:hidden; margin-left:28%; width:800px; height:480px;">
+              <video playsinline="playsinline"  muted autoplay >
+ 
+                <source src="~/images/logo-video_trimmed_cropped_cropped.mp4" type="video/mp4" />
+         
+           </video>
+     </div>
+
+
+    @foreach (var category in Model.Category)
+    {
+        <div class="row " id="menu-wrapper">
+                <partial name="_ThumbnailAreaPartial" model="@Model.Collection.Where(u=>u.Category.Name.Equals(category.Name))" />
+       </div>
+    }
+
+
+</div>
+

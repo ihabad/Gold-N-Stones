@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GoldAndSilver",
+    "\\GoldAndSilver\\Areas",
+    "\\GoldAndSilver\\Areas\\Customer",
+    "\\GoldAndSilver\\Areas\\Customer\\Views",
+    "\\GoldAndSilver\\Areas\\Customer\\Views\\Home",
+    "\\GoldAndSilver\\Views",
+    "\\GoldAndSilver\\Views\\Shared",
+    "\\GoldAndSilver\\wwwroot",
+    "\\GoldAndSilver\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\GoldAndSilver\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

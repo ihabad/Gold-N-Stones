@@ -1,0 +1,77 @@
+﻿@model GoldAndSilver.Models.CollectionViewModel
+@using GoldAndSilver.Extensions
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h2 class="text-info">Create Collection </h2>
+<br />
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+  <br />
+    <div class="border backgroundyellow">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for=" Collection.Name" class="col-form-label"></label>
+            </div><br />
+            <div class="col-5">
+                <input asp-for="Collection.Name" class="form-control" />
+            </div>
+            <span asp-validation-for="Collection.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Collection.Description" class="col-form-label"></label>
+            </div>
+            <div class="col-5">
+                @Html.TextAreaFor(m => m.Collection.Description)
+            </div>
+            <span asp-validation-for="Collection.Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Collection.Price" class="col-form-label"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Collection.Price" class="form-control" />
+            </div>
+            <span asp-validation-for="Collection.Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Collection.Image" class="col-form-label"></label>
+            </div>
+            <div class="col-5">
+                <input type="file" name="files" multiple class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Collection.CategoryId" class="col-form-label"></label>
+            </div>
+            <div class="col-5">
+                <select asp-for="@Model.Collection.CategoryId" id="CategoryId"
+
+                asp-items="Model.Category.ToSelectListItems(Model.Collection.CategoryId)" class="form-control">
+                     
+                </select>
+            </div>
+        </div>
+        <br />  <br />
+       
+            <div class="form-group row">
+            <div class="col-5 offset-2">
+                <partial name="_CreateAndBackToListButton" />
+            </div>
+        </div>
+          
+    </div>
+</form>

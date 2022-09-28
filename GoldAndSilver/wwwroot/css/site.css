@@ -1,0 +1,325 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Background */
+
+/*Category Section*/
+
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: white;
+}
+
+.backgroundyellow {
+    background-color: #7f7f7f;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 3px 10px white;
+}
+
+.backgroundyellow {
+    background-color: #7f7f7f;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 10px white;
+}
+
+.backgroundyellowborder10Padding {
+    background-color: #7f7f7f;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 10px white;
+}
+
+/*Navbar Section*/
+
+.menu-filter-list li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px 10px;
+    text-transform: uppercase;
+    background: #f5f5f5;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: "Poppins",sans-serif;
+}
+
+.menu-filter-list li.is-checke, .menu-filter-list li:hover {
+    background-color: #545b62;
+    color: darkgoldenrod;
+    box-shadow: 2px 10px #888888;
+ }
+
+
+
+.background-color {
+   background-color: black;
+}
+
+
+
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/*----  card Style aboutus  ----*/
+.title-section {
+    color: #AD974F;
+    font-size: 4rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem white;
+    font-family: 'Times New Roman', Times, serif margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    animation: animtext 4s steps(80, end);
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+
+.title{
+    color: #AD974F;
+    font-family:'Bell MT';
+    font-size: 5em;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    animation: animtext 4s steps(80, end);
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+    from {
+        width: 0;
+        transition: all 3s ease-in-out;
+    }
+}
+
+#cards_landscape_wrap-2 {
+    text-align: center;
+
+}
+
+#cards_landscape_wrap-2 .container{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+ border-radius: 5px;
+}
+
+ #cards_landscape_wrap-2 .card-flyer .image-box {
+   background: black;
+   overflow: hidden;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+   border-radius: 5px;
+  }
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+ -webkit-transition: all .9s ease;
+ -moz-transition: all .9s ease;
+ -o-transition: all .9s ease;
+  width: 100%;
+  height: 200px;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+ opacity: 0.7;
+ -webkit-transform: scale(1.15);
+ -moz-transform: scale(1.15);
+ -ms-transform: scale(1.15);
+ -o-transform: scale(1.15);
+ transform: scale(1.15);
+ }
+
+#cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+}
+
+ #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+   padding: 30px 18px;
+ }
+#cards_landscape_wrap-2 .card-flyer {
+ background: #FFFFFF;
+ margin-top: 50px;
+ -webkit-transition: all 0.2s ease-in;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ transition: all 0.2s ease-in;
+ box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+ background: #fff;
+ box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+ -webkit-transition: all 0.2s ease-in;
+ -moz-transition: all 0.2s ease-in;
+ -o-transition: all 0.2s ease-in;
+ transition: all 0.2s ease-in;
+ margin-top: 50px;
+ }
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+margin-top: 10px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+font-size: 14px;
+letter-spacing: 1px;
+color: #000000;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+margin-top: 0px;
+margin-bottom: 4px;
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Roboto Black', sans-serif;
+letter-spacing: 1px;
+ color: #00acc1;
+}
+
+/*---------------------FOOTER-----------*/
+
+#contact-section {
+    background-color: black;
+    text-align: center;
+    color: #ffffdd;
+    margin-right: 75px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    height: 3rem;
+    margin: 2rem;
+    padding: 0.4rem;
+    border: 0.1rem solid rgb(103, 96, 39);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: rgb(240, 244, 245);
+    flex-shrink: 0;
+    transition: background-color 0.5s;
+}
+
+.contact-form textarea {
+    max-width: 100%;
+    min-height: 5rem;
+}
+
+.form-input:focus {
+    background-color: rgba(215, 192, 21, 0.5);
+}
+
+.contact-form .form-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: rgb(12, 93, 120);
+    cursor: pointer;
+}

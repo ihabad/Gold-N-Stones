@@ -1,0 +1,79 @@
+﻿@model GoldAndSilver.Models.CollectionViewModel
+@using GoldAndSilver.Extensions
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h2 class="text-info">Edit Collection</h2>
+<br />
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="border backgroundyellow">
+        <input type="hidden" asp-for="Collection.Id" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <br />
+        <div class="col-8">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Collection.Name" class="col-form-label"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Collection.Name" class="form-control" />
+                </div>
+                <span asp-validation-for="Collection.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class=" col-4">
+                    <label asp-for="Collection.Description" class="col-form-label"></label>
+                </div>
+                <div class="col-8">
+                    @Html.TextAreaFor(m => m.Collection.Description)
+                </div>
+                <span asp-validation-for="Collection.Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class=" col-4">
+                    <label asp-for="Collection.Price" class="col-form-label"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Collection.Price" class="form-control" />
+                </div>
+                <span asp-validation-for="Collection.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Collection.Image" class="col-form-label"></label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="files" multiple class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class=" col-4">
+                    <label asp-for="Collection.CategoryId" class="col-form-label"></label>
+                </div>
+              
+            </div>
+
+        </div>
+        <div class="col-3 offset-1">
+            <img src="@Model.Collection.Image" width="100%" style="border-radius:7px;border: 1px solid #bbb9b9;" />
+        </div>
+
+        <div class="col-8">
+            <div class="col-8 offset-4">
+                <partial name="_EditAndBackToListButton" model="Model.Collection.Id" />
+            </div>
+        </div>
+        <br />
+
+    </div>
+</form>
