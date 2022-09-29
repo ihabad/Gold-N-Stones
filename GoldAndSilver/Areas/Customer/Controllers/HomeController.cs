@@ -97,9 +97,6 @@ namespace GoldAndSilver.Controllers
         }
 
 
-
-
-
         public IActionResult Privacy()
         {
             return View();

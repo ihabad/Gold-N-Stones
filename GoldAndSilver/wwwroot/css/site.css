@@ -153,7 +153,8 @@ body {
     color: #AD974F;
     font-size: 4rem;
     text-shadow: 0.3rem 0.3rem 0.3rem white;
-    font-family: 'Times New Roman', Times, serif margin: 10px 0 0 10px;
+    font-family: 'Times New Roman', Times, serif ;
+   margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
@@ -275,51 +276,72 @@ letter-spacing: 1px;
 
 /*---------------------FOOTER-----------*/
 
-#contact-section {
-    background-color: black;
-    text-align: center;
-    color: #ffffdd;
-    margin-right: 75px;
+
+.form-container {
+    width: 100%;
+    height: 38%;
+    justify-content: space-evenly;
+    background-image: url('../images/footer-img.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: 0.3rem 0.3rem.4rem #ccc, -0.1rem -0.1rem 0.4rem #ccc;
+    border-radius: 0.5rem;
 }
-
-
-
-.form-box {
+.contact-form {
+    width: 30rem;
+    background-color:antiquewhite;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    padding: 4rem;
+    border-radius: 3rem;
+    border-radius: 0.5em;
+    transform: rotateY(-20deg);
+    transition: all 0.5s;
+    margin-bottom:10%;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 50%;
-    height: 3rem;
-    margin: 2rem;
-    padding: 0.4rem;
-    border: 0.1rem solid rgb(103, 96, 39);
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    color: rgb(240, 244, 245);
-    flex-shrink: 0;
-    transition: background-color 0.5s;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
 }
 
 .contact-form textarea {
-    max-width: 100%;
-    min-height: 5rem;
+ max-height: 8rem;
+ min-height: 5rem;
+ max-width: 100%;
+ min-width: 70%;
 }
 
-.form-input:focus {
-    background-color: rgba(215, 192, 21, 0.5);
+.contact-form input[type="submit"] {
+ background-color: goldenrod;
+ border-radius: 2rem;
+ font-weight: bolder;
+ cursor: pointer;
 }
 
-.contact-form .form-btn {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-weight: 600;
-    letter-spacing: 0.3rem;
-    color: rgb(12, 93, 120);
-    cursor: pointer;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 7%;
+    position: relative;
+    height: 45%;
+}
+
+.map-responsive iframe {
+
+  height: 60%;
+  width: 50%;
+ position: absolute;
+ right:38px;
+}
+
+.social-media-icons {
+    text-align: center;
+
+}
+
+.social-media:hover {
+        transform: scale(1.1);
 }

@@ -466,7 +466,6 @@ C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AboutUs.cshtml.g.cs
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateButtonPartial.cshtml.g.cs
@@ -493,3 +492,4 @@ C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\bin\Debug\netcoreapp3
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
 C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
+C:\Users\ihaba\Desktop\Project\GoldAndSilver\GoldAndSilver\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Home\Privacy.cshtml.g.cs
